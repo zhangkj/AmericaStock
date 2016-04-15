@@ -10,7 +10,8 @@ dat.append(dataframe[0:3])
 dat.append(dataframe[3:5])
 
 dataframe =pd.concat(dat)
-print dataframe
+dataframe.set_index("Symbol")
+print dataframe["Symbol"]
 def callback2(request, result):
     symbol = request.args[0]
     if result is not None:

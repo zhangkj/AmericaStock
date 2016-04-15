@@ -1,5 +1,7 @@
+#-*-encoding:utf-8-*-
 '''
-download last three year history data
+download  history data
+
 '''
 
 from pyalgotrade.tools import yahoofinance
@@ -27,18 +29,18 @@ year = now.year
 month = now.month
 day = now.day
 
-begin =  datetime.date(year, month, day) - datetime.timedelta(days=1)
-end = datetime.date(year, month, day)
-
-
+#-------时间区间设置
+begin =  datetime.date(year, month, day) - datetime.timedelta(days=14)
+end = datetime.date(year, month, day) - datetime.timedelta(days=1)
+#------symbol设置
 #data = nasdaq_df['Symbol'].tolist() + amex_df['Symbol'].tolist()+nyse_df['Symbol'].tolist()
-data = nyse_df['Symbol'][:].tolist()
+data = nyse_df['Symbol'][:10].tolist()
 print data,begin,end
 
 
 
 def ExportResult(result):
-    csvFile = "result/%s.csv"%("curResult")
+    csvFile = "result/"+str(end)+"%s.csv"%("_download_data")
     if result is not None:
         f = open(csvFile, "w")
         f.write(result)
@@ -51,7 +53,8 @@ def callback2(request, result):
     if result is not None:
         global  resultlist,index
         if index==0:
-            resultlist += result.replace('\n',','+str(symbol)+'\n')
+            resultlist += "Date,Open,High,Low,Close,Volume,Adj Close,Symbol\n"
+            resultlist += result[42:].replace('\n',','+str(symbol)+'\n')
         else:
             resultlist += result[42:len(result)].replace('\n',','+str(symbol)+'\n')
         index+=1
@@ -70,7 +73,7 @@ def run(symbol):
         return yahoofinance.download_csv(symbol,begin, end, "d")
     except Exception:
         pass
-thread_num = 1000
+thread_num = 100
 pool = threadpool.ThreadPool(thread_num)
 requests = threadpool.makeRequests(run, data, callback2)
 [pool.putRequest(req) for req in requests]
