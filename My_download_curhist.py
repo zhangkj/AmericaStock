@@ -30,11 +30,11 @@ month = now.month
 day = now.day
 
 #-------时间区间设置
-begin =  datetime.date(year, month, day) - datetime.timedelta(days=14)
+begin =  datetime.date(year, month, day) - datetime.timedelta(days=7)
 end = datetime.date(year, month, day) - datetime.timedelta(days=1)
 #------symbol设置
 #data = nasdaq_df['Symbol'].tolist() + amex_df['Symbol'].tolist()+nyse_df['Symbol'].tolist()
-data = nyse_df['Symbol'][:10].tolist()
+data = nyse_df['Symbol'][:].tolist()
 print data,begin,end
 
 

@@ -21,12 +21,15 @@ day = now.day
 
 
 fileDate = datetime.date(year,month,day-1)
+dataDirName = "result/"
 tongji_fileName= str(fileDate) + "_tongji_Result.csv"
 downloadData_fileName = str(fileDate)+"_download_data.csv"
 tongji_data_fileName = str(fileDate)+"_tongji_data.csv"
+tongji_ChangeTop_fileName = dataDirName + str(fileDate)+"_DayChangeTop10.csv"  #上一交易日波动top10
 dataFile = "result/"+downloadData_fileName
 exportFile = "result/"+ tongji_fileName
 exportTongjiFile = "result/"+ tongji_data_fileName
+
 
 changeprice = "changeprice"
 changepercent = "changepercent(%)"
@@ -55,6 +58,7 @@ def calculate(df):
 
     df = df.sort_values(by=changepercent,ascending=False)
     df.to_csv(exportFile)
+
 indexSymbol = 0
 def tongjiData(df):
     #nasdaq
@@ -104,15 +108,25 @@ def tongjiData(df):
     stock_list_df = stock_list_df[stock_list_df[incrMonth4].notnull()]
     stock_list_df.to_csv(exportTongjiFile)
 
-if  os.path.exists(dataFile):
-    df = pd.read_csv(dataFile)
-    df = df.sort_values(by="Date")
-    #calculate(df)
-    tongjiData(df)
-else:
-    print dataFile + " not exist."
+def selectChangeTop10():
+    df = pd.read_csv(exportFile)
+    df = df[(df.Date=="2016-04-15")&(df.Open<=20)&(df.Open>=10)&(df.Volume>=2000000)]
+    df  = pd.concat([df[:10],df[-10:]])
+    df.to_csv(tongji_ChangeTop_fileName)
+
+
+def main():
+    if  os.path.exists(dataFile):
+        df = pd.read_csv(dataFile)
+        df = df.sort_values(by="Date")
+        calculate(df)
+        selectChangeTop10()
+        #tongjiData(df)
+    else:
+        print dataFile + " not exist."
 
             
-
+if __name__ == "__main__":
+    main()
 
 
