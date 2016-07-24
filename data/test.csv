@@ -1,0 +1,78 @@
+Symbol,幅度,股价,公司名,行业
+MANH,14.40%,67.3,"Manhattan Associates, Inc.",科技 /?软件?/?应用软件
+VMW,13.80%,58.5,"VMware, Inc.",科技 /?软件?/?技术与系统软件
+LXK,9.30%,37.9,Lexmark International Inc.,科技 /?硬件?/?基于计算机的系统
+DFS,8.10%,56.8,Discover Financial Services,金融 /?投资?/?信用服务
+MXL,7.10%,17,"MaxLinear, Inc.",科技 /?电子?/?半导体-集成电路
+SEIC,5.30%,48.7,SEI Investments Co.,金融 /?投资?/?资产管理
+TXT,4.90%,39.9,Textron Inc.,工业 /?国防?/?国防-主要
+VIAB,4.90%,37.4,"Viacom, Inc.",服务 /?广告出版传媒?/?综合娱乐
+YHOO,4.20%,37.8,Yahoo! Inc.,科技 /?互联网?/?互联网信息供应商
+LLTC,4.00%,46.1,Linear Technology Corporation,科技 /?电子?/?半导体-特殊
+STJ,4.00%,60.9,St. Jude Medical Inc.,医疗保健 /?医疗保健?/?医疗器械及设备
+HBHC,3.70%,26.2,Hancock Holding Company,金融 /?银行储蓄?/?区域性银行-东南
+DVN,3.40%,34.8,Devon Energy Corporation,基础材料 /?能源?/?独立石油公司
+BHP,3.40%,32.5,BHP Billiton Limited,基础材料 /?金属与矿产?/?工业金属和矿产
+EMC,3.00%,26.3,EMC Corporation,科技 /?硬件?/?数据存储设备
+CE,2.60%,71.5,Celanese Corporation,基础材料 /?化工产品?/?主要化工品
+STT,2.50%,61.8,State Street Corporation,金融 /?投资?/?资产管理
+AXP,2.30%,65,American Express Company,金融 /?投资?/?信用服务
+ACOR,2.30%,29.1,"Acorda Therapeutics, Inc.",医疗保健 /?生物制药?/?生物技术
+NAVI,2.30%,13.2,Navient Corporation,金融 /?投资?/?信用服务
+SHLX,2.10%,35.9,"Shell Midstream Partners, L.P.",基础材料 /?能源?/?油气-管道
+USB,2.00%,42.7,U.S. Bancorp,金融 /?银行储蓄?/?区域性银行-中西部
+SLB,1.80%,81.1,Schlumberger Limited,基础材料 /?能源?/?油气-设备服务
+YELP,1.80%,21.1,Yelp Inc.,科技 /?互联网?/?互联网信息供应商
+CMA,1.70%,42.4,Comerica Incorporated,金融 /?银行储蓄?/?货币中心银行
+GME,1.40%,32.9,GameStop Corp.,服务 /?零售?/?电子产品商店
+UBS,1.40%,16.8,UBS Group AG,金融 /?银行储蓄?/?国外货币中心银行
+BHI,1.10%,47,Baker Hughes Incorporated,基础材料 /?能源?/?油气-设备服务
+UAL,1.00%,58.6,"United Continental Holdings, Inc.",服务 /?运输?/?大型航空公司
+SNV,0.90%,31.4,Synovus Financial Corporation,金融 /?银行储蓄?/?区域性银行-中大西洋
+IBKR,0.80%,40.2,"Interactive Brokers Group, Inc.",金融 /?投资?/?投行-全国性
+ALDR,0.80%,27.7,Alder Biopharmaceuticals Inc.,医疗保健 /?生物制药?/?生物技术
+XOM,0.70%,86.8,Exxon Mobil Corporation,基础材料 /?能源?/?大型石油公司
+GM,0.70%,32.2,General Motors Company,消费品 /?汽车?/?主要汽车制造商
+V,0.60%,81.2,Visa Inc.,金融 /?投资?/?信用服务
+SON,0.60%,49.1,Sonoco Products Co.,消费品 /?必需品?/?包装与容器
+EAT,0.60%,44.7,"Brinker International, Inc.",服务 /?奢侈娱乐?/?餐馆
+NTRS,0.60%,72.2,Northern Trust Corporation,金融 /?投资?/?资产管理
+YUM,0.50%,82.6,"Yum! Brands, Inc.",服务 /?奢侈娱乐?/?餐馆
+ABBV,0.50%,60.5,AbbVie Inc.,医疗保健 /?生物制药?/?制药商-主要
+PLCM,0.40%,11.9,"Polycom, Inc.",科技 /?通信电信?/?通信设备
+PSX,0.30%,86.7,Phillips 66,基础材料 /?能源?/?油气-精炼销售
+BLMN,0.30%,17.6,"Bloomin' Brands, Inc.",服务 /?奢侈娱乐?/?餐馆
+ABT,0.30%,44,Abbott Laboratories,医疗保健 /?医疗保健?/?医疗器械及设备
+DISH,0.20%,47.4,Dish Network Corp.,服务 /?广告出版传媒?/?有线电视
+AMTD,0.20%,31.1,TD Ameritrade Holding Corporation,金融 /?投资?/?投行-全国性
+LVLT,0.10%,54,"Level 3 Communications, Inc.",科技 /?通信电信?/?其他通信服务
+ORCL,0.10%,41.1,Oracle Corporation,科技 /?软件?/?应用软件
+KORS,0.00%,52,Michael Kors Holdings Limited,消费品 /?必需品?/?纺织品-服装
+SBUX,0%,60.9,Starbucks Corporation,服务 /?奢侈娱乐?/?特种餐饮
+SAP,-0.10%,80.5,SAP SE,科技 /?软件?/?应用软件
+BKU,-0.10%,36,"BankUnited, Inc.",金融 /?银行储蓄?/?区域性银行-中大西洋
+BSX,-0.10%,19.6,Boston Scientific Corporation,医疗保健 /?医疗保健?/?医疗器械及设备
+AWH,-0.10%,36.5,"Allied World Assurance Company Holdings, AG",金融 /?保险?/?财险灾害险
+LECO,-0.20%,62,Lincoln Electric Holdings Inc.,工业 /?机械设备?/?小型工具及配件
+BAX,-0.20%,43.3,Baxter International Inc.,医疗保健 /?医疗保健?/?医疗仪器及用品
+AKAM,-0.20%,51.3,"Akamai Technologies, Inc.",科技 /?互联网?/?互联网信息供应商
+CHL,-0.20%,57.4,China Mobile Limited,科技 /?通信电信?/?无线通信
+DRQ,-0.40%,61.7,"Dril-Quip, Inc.",基础材料 /?能源?/?油气-设备服务
+VZ,-0.60%,51.8,Verizon Communications Inc.,科技 /?通信电信?/?电信-美国
+EDU,-0.60%,39.3,New Oriental Education & Technology Group Inc.,服务 /?服务?/?教育培训服务
+LVS,-0.70%,52.2,Las Vegas Sands Corp.,服务 /?奢侈娱乐?/?度假村和赌场
+GPN,-0.80%,76,Global Payments Inc.,服务 /?服务?/?商业服务
+ITC,-1.20%,43.2,ITC Holdings Corp.,公用事业 /?公用事业?/?电力
+TOL,-1.30%,29,Toll Brothers Inc.,工业 /?建筑?/?住宅建设
+OMC,-1.60%,83.4,Omnicom Group Inc.,服务 /?广告出版传媒?/?广告
+LMCA,-1.70%,18.7,Liberty Media Corporation,服务 /?广告出版传媒?/?广播-电视台
+ARMH,-2.20%,41,ARM Holdings plc,科技 /?电子?/?半导体-特殊
+NYCB,-2.60%,15.5,New York Community Bancorp Inc.,金融 /?银行储蓄?/?储蓄所
+SAVE,-3.00%,51.4,"Spirit Airlines, Inc.",服务 /?运输?/?大型航空公司
+HSY,-3.10%,91.6,The Hershey Company,消费品 /?食品饮料?/?糖果
+DV,-3.30%,17.1,DeVry Education Group Inc.,服务 /?服务?/?教育培训服务
+ASML,-3.30%,96.4,ASML Holding NV,科技 /?电子?/?半导体-材料与设备
+TUP,-4.20%,58.9,Tupperware Brands Corporation,消费品 /?必需品?/?包装与容器
+KO,-4.80%,44.4,The Coca-Cola Company,消费品 /?食品饮料?/?饮料-软饮料
+OMI,-9.00%,37.5,Owens & Minor Inc.,服务 /?批发?/?医疗设备批发
+ALR,-12.40%,43.4,Alere Inc.,医疗保健 /?医疗保健?/?医疗实验与研究

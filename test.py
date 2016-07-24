@@ -8,6 +8,9 @@ import pandas as pd
 import numpy as np
 import datetime
 
+print datetime.datetime.now()
+print datetime.datetime.strptime("2016/03/10","%Y/%M/%d")
+
 
 dataframe =nyse_df = pd.read_csv("data/nyse.csv")
 
@@ -26,7 +29,7 @@ df = pd.read_csv(filename)
 df = df[(df.Date=="2016-04-15")&(df.Open<=20)&(df.Open>=10)&(df.Volume>=2000000)].sort_values(by="Open",ascending=False)
 #print df[:10]
 df = pd.concat([df[:5],df[-5:]])
-print df
+#print df
 #df.tocsv("test.csv")
 
 

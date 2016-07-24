@@ -25,11 +25,11 @@ nyse_df = nyse_df[nyse_df.Industry != 'n/a']
 now = datetime.datetime.now() 
 year = now.year
 
-begin = dt.get_first_monday(year-3)
-end = dt.get_last_monday(year) + datetime.timedelta(days=6)
+BEGIN = dt.get_first_monday(year - 3)
+END = dt.get_last_monday(year) + datetime.timedelta(days=6)
 
 
-data = nasdaq_df['Symbol'].tolist() + amex_df['Symbol'].tolist() + nyse_df['Symbol'].tolist()
+DATA = nasdaq_df['Symbol'].tolist() + amex_df['Symbol'].tolist() + nyse_df['Symbol'].tolist()
 
 
 def callback(request, result):
@@ -42,13 +42,13 @@ def callback(request, result):
     
 def run(symbol):
     try:
-        return yahoofinance.download_csv(symbol,begin, end, "w")
+        return yahoofinance.download_csv(symbol, BEGIN, END, "w")
     except Exception:
         pass
     
 n = 150
 pool = threadpool.ThreadPool(n) 
-requests = threadpool.makeRequests(run, data, callback) 
+requests = threadpool.makeRequests(run, DATA, callback)
 [pool.putRequest(req) for req in requests] 
 pool.wait()
 pool.dismissWorkers(n, do_join=True)

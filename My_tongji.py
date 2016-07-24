@@ -108,11 +108,17 @@ def tongjiData(df):
     stock_list_df = stock_list_df[stock_list_df[incrMonth4].notnull()]
     stock_list_df.to_csv(exportTongjiFile)
 
+
 def selectChangeTop10():
     df = pd.read_csv(exportFile)
     df = df[(df.Date=="2016-04-15")&(df.Open<=20)&(df.Open>=10)&(df.Volume>=2000000)]
     df  = pd.concat([df[:10],df[-10:]])
     df.to_csv(tongji_ChangeTop_fileName)
+
+def SelectCanTradeStock():
+    pass
+
+
 
 
 def main():
@@ -125,7 +131,7 @@ def main():
     else:
         print dataFile + " not exist."
 
-            
+
 if __name__ == "__main__":
     main()
 
